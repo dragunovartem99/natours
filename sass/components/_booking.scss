@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+.booking {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to bottom right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+}
+
+.booking-box {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 60%,
+      transparent 60%
+    ),
+    url(../img/nat-10.jpg);
+  background-size: cover;
+  border-radius: 0.3rem;
+  box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: 0.2);
+  &__form {
+    width: 60%;
+    padding: 6rem;
+  }
+}

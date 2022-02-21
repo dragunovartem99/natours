@@ -1,0 +1,29 @@
+@use "../abstracts" as *;
+
+.btn {
+  display: inline-block;
+  text-decoration-line: none;
+  text-transform: uppercase;
+  border-radius: 5rem;
+  padding: 1.5rem 4rem;
+
+  &--white {
+    background-color: $color-white;
+    color: $color-gray-dark;
+  }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &--underline {
+    text-transform: none;
+    border-radius: 0;
+    font-size: $font-default;
+    border-bottom: 0.1rem $color-primary solid;
+    color: $color-primary;
+    padding: 0.3rem;
+    font-weight: 700;
+  }
+}

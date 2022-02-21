@@ -1,0 +1,40 @@
+@use "../abstracts" as *;
+
+.w-footer {
+  background-color: $color-gray-darkest;
+}
+
+.footer {
+  font-size: 1.4rem;
+  padding: 10rem 0;
+
+  &__logo {
+    display: inline;
+    width: 15rem;
+  }
+
+  &__navigation {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.1rem solid $color-gray;
+    padding-top: 1.5rem;
+  }
+
+  &__link {
+    color: $color-gray-lightest;
+    text-transform: uppercase;
+  }
+
+  &__copyright {
+    flex: 1;
+
+    color: $color-gray-light;
+    border-top: 0.1rem solid $color-gray;
+    padding-top: 1.5rem;
+  }
+
+  &__copyright &__link {
+    color: $color-primary;
+  }
+}
