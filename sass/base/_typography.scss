@@ -12,14 +12,13 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 1.7;
-  color: $color-gray-dark;
+  font-size: var(--kegel-5);
+  line-height: var(--height-5);
+  color: var(--oc-gray-7);
 }
 
 .heading-primary {
-  color: $color-white;
+  color: var(--oc-white);
   text-transform: uppercase;
 
   span {
@@ -27,9 +26,9 @@ body {
   }
 
   &--main {
-    font-size: 6rem;
-    letter-spacing: 3.5rem;
-    font-weight: 400;
+    font-size: var(--space-1);
+    letter-spacing: var(--kegel-12);
+    font-weight: var(--weight-4);
     @include mq(sm) {
       font-size: 5rem;
       letter-spacing: 1rem;
@@ -37,9 +36,9 @@ body {
   }
 
   &--sub {
-    font-size: 2rem;
-    letter-spacing: 1.73rem;
-    font-weight: 700;
+    font-size: var(--kegel-7);
+    letter-spacing: var(--kegel-6);
+    font-weight: var(--weight-7);
     @include mq(sm) {
       letter-spacing: 0.5rem;
     }
@@ -48,9 +47,9 @@ body {
 
 .heading-secondary {
   display: inline-block;
-  font-size: 3.5rem;
+  font-size: var(--kegel-11);
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: var(--weight-7);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -64,18 +63,18 @@ body {
 
   background-image: linear-gradient(
     to right,
-    $color-primary-light,
-    $color-primary-dark
+    var(--oc-green-4),
+    var(--oc-teal-7)
   );
 }
 
 .heading-tertiary {
-  font-size: $font-default;
-  font-weight: 700;
+  font-size: var(--kegel-5);
+  font-weight: var(--weight-7);
   text-transform: uppercase;
 }
 
 .about__text {
-  font-size: $font-default;
+  font-size: var(--kegel-5);
   margin-bottom: 3rem;
 }
