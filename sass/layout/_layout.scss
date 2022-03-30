@@ -37,6 +37,7 @@ body {
 
 .tours__cards {
   display: flex;
+  justify-content: space-between;
   gap: 3rem;
   @include mq(xl) {
     flex-wrap: wrap;
